@@ -2,4 +2,22 @@
 
 *{
     font-family: "Poppins", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*CORES */
+:root{
+    --body-color: #99caf7;
+    --nav-color:#4070F4;
+    --side-nav:#010718;
+    --text-color:#FFF;
+    --search-bar:#F2F2F2;
+    --search-text:#010718;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--body-color);
 }
