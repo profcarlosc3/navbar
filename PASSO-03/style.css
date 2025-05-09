@@ -16,12 +16,13 @@
     --search-bar:#F2F2F2;
     --search-text:#010718;
 }
-
+/*Toos os elementos da página*/
 body{
     height: 100vh;
     background-color: var(--body-color);
 }
 
+/*Estilizando Nav*/
 nav{
     position: fixed;
     top: 0;
@@ -31,69 +32,17 @@ nav{
     width: 100%;
 }
 
+/*Estilizando Nav-Bar */
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 100px;
+    max-width: 1000px;
     width: 100%;
-    background-color: var(--nav-color);
-    margin: 0 auto;
-    padding: 0 30px;
-    display: flex;
-    align-items: center;
+    background-color: red; /*Modificar essa cor ao final*/
+    margin: 0 auto; /*Observe quando essa linha for acrescentada*/
+    padding: 0 30px;/*Observe quando essa linha for acrescentada*/
+    background-color: var(--nav-color);/*Subsistitui a cor anterior*/
+    display: flex;/*Observe quando essa linha for acrescentada*/
+    align-items: center;/*Observe quando essa linha for acrescentada*/
     justify-content: space-between;
-}
-
-.nav-bar .nav-links{
-    display: flex;
-    align-items: center;
-}
-
-.nav-bar .nav-links li{
-    margin: 0 5px;
-    list-style: none;
-    
-}
-
-.nav-links li a{
-    position: relative;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--text-color);
-    padding: 100px;
-}
-
-nav .nav-bar .logo a{
-    font-size: 25px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-nav .nav-bar .logo a::before{
-    content: '';
-    position: absolute;
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-}
-
-.nav-links li a::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.nav-links li:hover a::before{
-    opacity: 1;
 }
