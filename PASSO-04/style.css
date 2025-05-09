@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*CORES */
+:root{
+    --body-color: #99caf7;
+    --nav-color:#4070F4;
+    --side-nav:#010718;
+    --text-color:#FFF;
+    --search-bar:#F2F2F2;
+    --search-text:#010718;
+}
+/*Toos os elementos da página*/
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+/*Estilizando Nav*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: var(--nav-color);
+    width: 100%;
+}
+
+/*Estilizando Nav-Bar */
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: red; /*Modificar essa cor ao final*/
+    margin: 0 auto; /*Observe quando essa linha for acrescentada*/
+    padding: 0 30px;/*Observe quando essa linha for acrescentada*/
+    background-color: var(--nav-color);/*Subsistitui a cor anterior*/
+    display: flex;/*Observe quando essa linha for acrescentada*/
+    align-items: center;/*Observe quando essa linha for acrescentada*/
+    justify-content: space-between;
+}
+
+/*Estilizando Nav-Bar/Nav-Links/LI/A */
+.nav-bar .nav-links{
+    display: flex;/*Observe quando essa linha for acrescentada*/
+    align-items: center;
+}
+
+.nav-bar .nav-links li{
+    list-style:none;/*Observe as possibilidade de lista e o que acontece quando se coloca none */
+    margin: 0 5px;
+}
+
+.nav-links li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+}
